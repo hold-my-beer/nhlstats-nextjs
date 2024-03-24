@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'assets.nhle.com',
+        port: '',
+        pathname: '/mugs/nhl/**',
+      },
+    ],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
